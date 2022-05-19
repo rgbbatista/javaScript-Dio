@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mnipulando Elementos na Página</title>
+  </head>
+  <body>
+    <h1>Manipulando Elementos na Página</h1>
+
+    <h2>Tipos de saída do JavaScript</h2>
+
+    <ul>
+      <li>innerHTML</li>
+      <li>document.write</li>
+      <li>alert</li>
+      <li>console.log</li>
+    </ul>
+
+    <h3>innerHTML</h3>
+
+    <p id="texto"></p>
+
+    <h3>document.write</h3>
+    <li>Usado para testes na maioria das vezes</li>
+
+    <p>
+      <script>
+        document.write('Escrito com document.write')
+      </script>
+    </p>
+
+    <li>Também pode receber funções</li>
+
+    <p>
+      <script>
+        document.write(2800 + 6000)
+        document.write('R$ Esse será o meu salário')
+      </script>
+    </p>
+
+    <h3>Alert</h3>
+    <li>
+      Todas as vezes que atualizar a tela vai aparecer um alerta do javaScript
+      ao utilizar alert(....)
+    </li>
+
+    <h3>Console.log</h3>
+    <li>Console.log é verificado apertando f12 em console</li>
+    <hr />
+
+    <h3>Usando a função onclick</h3>
+    <li>Exibe um alerta ao clicar no botão</li>
+
+    <button type="button" onclick="clicar()">Clique Aqui</button>
+
+    <h3>Usando a função innerHTML</h3>
+    <li>
+      Ao clicar no botão vai ser inscrito na tela um texto associado a função
+      innerHTML
+    </li>
+
+    <button type="button" onclick="clicar2()">Clique Aqui</button>
+
+    <p id="butao2"></p>
+
+    <h3>Direcionar para outra página</h3>
+
+    <li>Usando window.open("") abre uma outra guia</li>
+
+    <p>O botão direciona para site da Dio</p>
+
+    <button type="button" onclick="clicar3()">Clique Aqui</button>
+
+    <p>
+      O botão primeiro através de innerHTML vai escrever um texto na tela, e
+      esse texto vai direcionar para o site da Dio
+    </p>
+
+    <button type="button" onclick="clicar4()">Clique Aqui</button>
+
+    <u> <p id="botao4" onclick="redirecionar()"></p> </u>
+
+    <br />
+
+    <li>Usando o window.location.href+"" abre na mesma guia</li>
+
+    <button type="button" onclick="clicar5()">Clique Aqui</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onchange</title>
+  </head>
+  <body>
+    <h1>Onchange</h1>
+    <li>
+      Quando nos temos um select com algumas opções, sempre quando o usuário
+      trocar o valor vai ser impresso, caso queira como alert ou console.log
+    </li>
+    <br />
+    <select onchange="funcaoChange(this)">
+      <option value="JavaScript">JavaScript</option>
+      <option value="Kotlin">Kotlin</option>
+      <option value="Python">Python</option>
+    </select>
+    <!--Script-->
+
+    <script>
+      function funcaoChange(elemento) {
+        alert(elemento.value)
+        console.log(elemento.value)
+      }
+    </script>
+  </body>
+</html>

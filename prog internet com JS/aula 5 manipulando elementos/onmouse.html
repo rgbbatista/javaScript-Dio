@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onmouse</title>
+  </head>
+  <body>
+    <h2>Onmouseover</h2>
+    <li>Ao passar o mouse exibe um alert com o texto trocado</li>
+
+    <p onmouseover="trocar()">Passe o mouse aqui!</p>
+
+    <h2>Onmouseover & Onmouseout</h2>
+
+    <li>Mudar o texto de fato através do innerHTML</li>
+
+    <p id="mudartexto" onmouseover="trocar1()" onmouseout="voltar1()">
+      Passe o mouse aqui!
+    </p>
+    <hr />
+
+    <li>
+      Usando This e Elemento funciona em qualque id e até mesmo sem id, bastando
+      usar <i>this e elemento</i>
+    </li>
+
+    <p id="mudartexto" onmouseover="trocar1(this)" onmouseout="voltar1(this)">
+      Passe o mouse aqui!
+    </p>
+
+    <p id="sem" onmouseover="trocar1(this)" onmouseout="voltar1(this)">
+      Passe o mouse aqui!
+    </p>
+
+    <script src="onmouse.js"></script>
+  </body>
+</html>
