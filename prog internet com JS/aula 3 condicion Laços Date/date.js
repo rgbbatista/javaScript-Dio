@@ -1,0 +1,5 @@
+var hoje = new Date()
+alert(hoje)
+alert(hoje.getMonth() + 1)
+alert(hoje.getMinutes())
+alert(hoje.getHours())
