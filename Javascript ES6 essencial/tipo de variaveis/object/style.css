@@ -1,0 +1,35 @@
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .info {
+        padding: 05px;
+      }
+      .github {
+        text-decoration: none;
+      }
+      #linkedin {
+        text-decoration: none;
+      }
+
+      .foto {
+        height: 80px;
+      }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 5px 5px 5px;
+      }
+
+      span,
+      p,
+      img,
+      video,
+      h2,
+      ul,
+      footer {
+        padding: 4px 5px 5px 5px;
+      }
+    

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2Object</title>
+  </head>
+  <body>
+    <h1>Object Noções avançadas</h1>
+
+    <script>
+      const user = {
+        name: 'Rodrigo',
+        lastName: 'Gomes Batista'
+      }
+
+      //Recuperar as chaves do objeto"Retornar arrays das chaves"
+      console.log('Propriedade do objeto user:', Object.keys(user))
+      //Retorna arrays dos valores
+      console.log(
+        '\nValores das propriedades do objeto user:',
+        Object.values(user)
+      )
+
+      //Retorna array de arrays contendo nome e valor das propriedades
+      console.log('\nLista de propriedade e valores', Object.entries(user))
+
+      //Mergear propriedade de objeto
+      Object.assign(user, { fullName: 'Rodrigo Gomes Batista' })
+      console.log('\nAdd a propr, FullName no objeto user:', user)
+      console.log(
+        '\nRetorna um novo objeto margeando dois ou mais objetos:',
+        Object.assign({}, user, { age: 36 })
+      )
+      //Freeze Previne todas as aterações em um objeto
+      const novoObjeto = { foo: 'bar' }
+      novoObjeto.foo = 'changes' //modifiquei de bar para changes
+      console.log(novoObjeto)
+      //Deletou foo
+      delete novoObjeto.foo
+      console.log(novoObjeto)
+      //Criou
+      novoObjeto.bar = 'foo'
+      console.log(novoObjeto)
+      //o Object freeze não permite nada disso
+
+      const newObj = { foo: 'bar' }
+      Object.freeze(newObj)
+      newObj.foo = 'changes'
+
+      delete newObj.foo
+
+      newObj.bar = 'foo'
+
+      console.log(
+        '\nVariável newObj após atereções:',
+        newObj,
+        '\nNão houve alterações devido freeze'
+      )
+
+      //Objecto seal permite apenas alteraçoes de propriedade existentes em um objeto
+      const person = { name: 'Rodrigo' }
+      Object.seal(person)
+      //permite alterar name
+
+      person.name = 'Gomes Batista'
+      delete person.name
+      person.age = 26
+      // não permite deletar name nem criar age
+
+      console.log(
+        '\nVariável person após aterções',
+        person,
+        'permite alterar name, mas não permite deletar name nem criar age devido seal'
+      )
+    </script>
+  </body>
+</html>

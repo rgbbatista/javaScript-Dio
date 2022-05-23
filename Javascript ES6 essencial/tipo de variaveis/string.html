@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tipo de variáveis</title>
+  </head>
+  <body>
+    <h1>Tipo de variáveis</h1>
+
+    <!--Script-->
+
+    <script>
+      //RETORNA O TAMANHO DE UMA STRING
+      const textSize = 'texto'.length
+      console.log(`Quantidade de letras: ${textSize}`)
+
+      //RETORNA UM ARRAY QUEBRANDO A STRING POR UM DELIMITADOR
+      const splitTexto = 'texto'.split('x')
+      console.log(
+        '\nArray com as posições separadas pelo delimitador',
+        splitTexto
+      )
+
+      //BUSCA POR UM VALOR E SUBSTUI POR OUTRO
+      const replaceTexto = 'texto'.replace('texto', 'Vou dominar JS')
+      console.log('\nSubstituição do valor:', replaceTexto)
+
+      //RETORNA A "FATIA" DE UM VALOR
+      const lastChar = 'texto'.slice(-1)
+      console.log('\nRetorna a última letra de uma string:', lastChar)
+
+      const primUltChar = 'texto'.slice(0, -1)
+      console.log(
+        '\nValor dastring da primeira letra menos a última:',
+        primUltChar
+      )
+
+      const segUltChar = 'texto'.slice(1)
+      console.log(
+        '\nValor da string da segunda letra até a última:',
+        segUltChar
+      )
+
+      //RETORNA N CARACTERS APARTIR DE UMA POSIÇÃO
+      const posicChar = 'texto'.substr(0, 2)
+      console.log('\nAs duas primeiras letras são:', posicChar)
+    </script>
+  </body>
+</html>

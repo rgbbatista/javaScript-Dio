@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+    <h1>Objeto</h1>
+
+    <script>
+      let user = {
+        name: 'Rodrigo'
+      }
+
+      //Alterando a propriedade de um objeto
+      console.log(user)
+
+      user.name = 'Outro nome 1'
+      //console.log(user)
+
+      user['name'] = 'Outro nome 2'
+      // console.log(user)
+
+      const proprio = 'name'
+      user[proprio] = 'Outro nome 3'
+      //console.log(user)
+
+      //Criando uma propriedade
+      user.lastName = 'Gomes Batista'
+      console.log(user)
+
+      //Deletar propriedade
+      delete user.name
+      console.log(user)
+    </script>
+  </body>
+</html>
